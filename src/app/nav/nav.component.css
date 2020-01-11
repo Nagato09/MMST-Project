@@ -1,0 +1,31 @@
+nav {
+background-color: rgb(0,117,140);
+}
+
+#plt_logo,#unity3d_logo,#tud_logo {
+  background-color: rgb(0,117,140);
+}
+html {
+background-color: rgb(0,117,140);
+}
+
+.navbar a {
+  font-family: "Open Sans";
+  background-color: #d1d1d1;
+  color: #001236;
+  font-size: 21px;
+  padding: 7px;
+  transition: 0.3s;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.navbar a:hover {
+  background: #001236;
+  color: #FFF;
+}
+.navbar a:active {
+  transition: none;
+  background: #0044cc;
+}
