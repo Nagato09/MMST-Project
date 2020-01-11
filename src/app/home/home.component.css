@@ -1,14 +1,39 @@
-section {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
+
+div {
+  font-size: 40px;
   font-family: Open Sans;
+  background-color: #00305d;
+  box-sizing: border-box;
+  color:white;
 }
+
+.welcome{
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin-top: 0.5%;
+}
+.about{
+  width: 49.5%;
+  height: 400px;
+  float: left;
+  font-size:25px;
+  margin-top: 0.5%;
+  margin-right: 0.5;
+}
+.get_started{
+  width: 50%;
+  height: 400px;
+  float:left;
+  font-size:25px;
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+}
+h3{
+  margin-left: 30px;
+}
+p{
+  text-align: center;
+}
+
 /*Comment*/

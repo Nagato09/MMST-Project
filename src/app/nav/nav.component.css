@@ -1,31 +1,46 @@
-nav {
-background-color: rgb(0,117,140);
-}
-
-#plt_logo,#unity3d_logo,#tud_logo {
-  background-color: rgb(0,117,140);
-}
-html {
-background-color: rgb(0,117,140);
-}
-
-.navbar a {
+section {
+  width: 100%;
+  background-color: #00305d;
   font-family: "Open Sans";
-  background-color: #d1d1d1;
-  color: #001236;
-  font-size: 21px;
-  padding: 7px;
-  transition: 0.3s;
-  text-align: center;
-  border: none;
-  text-decoration: none;
+  font-weight: 400;
   box-sizing: border-box;
+
 }
-.navbar a:hover {
+#plt_logo,#unity3d_logo,#tud_logo {
+  background-color: #00305d;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+ul {
+  background-color: #00305d;
+  box-sizing: border-box;
+  width:100%;
+  margin:0px;
+  /*border-top: 1px solid #0070D9;*/
+}
+ li {
+  background-color: #00305d;
+  transition: 0.3s;
+  padding: 20px;
+
+  text-align: center;
+  box-sizing: border-box;
+  border-right: 1px solid #0070D9;
+  display: inline-block;
+}
+.first {
+  border-left: 1px solid #0070D9;
+  border-right: 1px solid #0070D9;
+}
+li:hover {
   background: #001236;
   color: #FFF;
 }
-.navbar a:active {
+li:active {
   transition: none;
   background: #0044cc;
+}
+a{
+  color: white;
+  text-decoration:none;
 }
