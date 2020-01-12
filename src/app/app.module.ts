@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { PackagemComponent } from './packagem/packagem.component';
 import { ProjectmComponent } from './projectm/projectm.component';
 import { ContactComponent } from './contact/contact.component';
+import { NewpComponent } from './projectm/newp/newp.component';
+import { LocalpComponent } from './projectm/localp/localp.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     PackagemComponent,
     ProjectmComponent,
-    ContactComponent
+    ContactComponent,
+    NewpComponent,
+    LocalpComponent
   ],
   imports: [
     BrowserModule,
