@@ -1,0 +1,38 @@
+.name p{
+  text-align: center;
+  font-size: 25px;
+}
+.pckSdiv, .shopping p{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+
+}
+.pckSdiv, .shopping{
+  height:400px;
+  width: 20%;
+  background-color: #00305d;
+  margin-left: 50px;
+  text-align: center;
+  font-family: Open Sans;
+  float:left;
+  box-sizing: border-box;
+
+}
+.details{
+  background-color: #00305d;
+  color: white;
+  font-family: Open Sans;
+  float:left;
+  width: 10%;
+  height: 92px;
+  box-sizing: border-box;
+  margin-left: 1%;
+  margin-top: 20%;
+  text-align: left;
+  padding-left: 1em;
+
+}
+.shopping{
+  margin-left: 42%;
+}

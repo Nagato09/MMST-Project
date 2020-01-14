@@ -1,0 +1,35 @@
+div{
+    background-color: #00305d;
+    color:white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.pm{
+  width:100%;
+  box-sizing: border-box;
+  height: 100px;
+  text-align: center;
+}
+.newp, .localp {
+  background-color: #00305d;
+  transition: 0.3s;
+  float:left;
+  box-sizing: border-box;
+  width: 40%;
+  height: 200px;
+  margin-left:5%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.newp:hover,.localp:hover {
+  background: #001236;
+  color: #FFF;
+}
+.newp:active, .localp:active{
+  transition: none;
+  background: #0044cc;
+}

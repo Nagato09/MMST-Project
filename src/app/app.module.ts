@@ -10,6 +10,7 @@ import { ProjectmComponent } from './projectm/projectm.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewpComponent } from './projectm/newp/newp.component';
 import { LocalpComponent } from './projectm/localp/localp.component';
+import { UploadComponent } from './projectm/localp/upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LocalpComponent } from './projectm/localp/localp.component';
     ProjectmComponent,
     ContactComponent,
     NewpComponent,
-    LocalpComponent
+    LocalpComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,

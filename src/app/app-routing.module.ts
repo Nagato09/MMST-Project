@@ -6,6 +6,7 @@ import { ProjectmComponent } from './projectm/projectm.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewpComponent } from './projectm/newp/newp.component';
 import { LocalpComponent } from './projectm/localp/localp.component';
+import { UploadComponent } from './projectm/localp/upload/upload.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'localp', component: LocalpComponent },
   { path: 'newp', component: NewpComponent },
+  { path: 'upload', component: UploadComponent },
 ];
 
 @NgModule({

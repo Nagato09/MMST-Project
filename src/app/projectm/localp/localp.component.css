@@ -1,0 +1,36 @@
+h2{
+  color: #00305d;
+}
+#h2 {
+
+  text-align: center;
+  font-size: 50px;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+#upload{
+  font-size: 50px;
+  color: white;
+  background-color: #00305d;
+  margin-left: 10%;
+  margin-right: 70%;
+}
+#localp{
+  font-size: 20px;
+}
+#anzeige, #anzeige2, #download{
+  font-size: 50px;
+  margin-left: 10%;
+  margin-top: 2%;
+  background-color: #00305d;
+  color: white;
+  float: left;
+  text-align: left;
+  padding: 1cm;
+
+
+}
+#download{
+  width: 200px;
+  text-align: center;
+}
