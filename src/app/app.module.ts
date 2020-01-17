@@ -10,7 +10,7 @@ import { ProjectmComponent } from './projectm/projectm.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewpComponent } from './projectm/newp/newp.component';
 import { LocalpComponent } from './projectm/localp/localp.component';
-import { UploadComponent } from './projectm/localp/upload/upload.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +22,11 @@ import { UploadComponent } from './projectm/localp/upload/upload.component';
     ContactComponent,
     NewpComponent,
     LocalpComponent,
-    UploadComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
