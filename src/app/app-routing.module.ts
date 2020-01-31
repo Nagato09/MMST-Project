@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NewpComponent } from './projectm/newp/newp.component';
 import { LocalpComponent } from './projectm/localp/localp.component';
 
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'packagemanager', component: PackagemComponent },

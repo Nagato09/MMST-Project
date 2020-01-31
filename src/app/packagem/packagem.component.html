@@ -4,89 +4,79 @@
 <div class="pm">
     <h2> </h2>
 </div>
+
 <div class="grid">
     <div class="search_box">
 
-        <div style="padding-left:16px">
-            <h4>Search Packages on the server</h4>
-        </div>
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <div class="search-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
+        <h2> </h2>
 
-        <select id="targetField" multiple="multiple" name="D1" style="width:200px; line-height:27px; float:center; height:230px;">
-            <option>Package</option>
-            <option>Package</option>
-            <option>Package</option>
-            <option>Package</option>
-            <option>Package</option>
-            <option>Package</option>
-            <option>Package</option>
-        </select>
+        <div id='container'>
+            <div class='cell'>
+                <input type='search' placeholder='Search packages' [(ngModel)]="searchText">
+            </div>
+            <div class='cell'>
+                <div class='button'>Search</div>
+            </div>
+        </div>
+        <h2> </h2>
+
+        <tr *ngFor="let package of packages | filter:searchText" (click)="onSelect(package)" (dblclick)="addToCart(package)">
+            <td>{{package.name}}</td>
+        </tr>
 
     </div>
     <div class="package_info">
 
         <div class="package_grid">
             <div class="logo">
-              <h3 style="text-align:center">
-          <style>
-                .frame {
-                width: 50px;
-                height: 50px;
-                border: 3px solid #ccc;
-                background: #eee;
-                margin: auto;
-                padding: 15px 25px;
-                }
-                img {
-                width: 100%;
-                height: 100%;
-                }
-              </style>
+                <h3 style="text-align:center">
 
-              <div class="frame"><i class="fa fa-shopping-bag" style="font-size:48px;color:red" ></i></div>
-                Package Name
+              <div class="frame">
+                <i class="fa fa-shopping-bag" style="font-size:48px;color:red" ></i></div>
+                <font size="5" *ngIf="selectedPackage">
+                    {{selectedPackage.name | uppercase}}
 
+                  </font>
             </h3>
-    </div>
+            </div>
+
             <div class="readme">
 
                 <h6 style="text-align:left">
                       Readme:
                 </h6>
-                <font size="2">aponevporn zo pirng p"zonf zpfn zpnf .</font>
+                <font size="2" *ngIf="selectedPackage">
+                    <h2>{{selectedPackage.readme}} </h2>
+
+                  </font>
             </div>
+
             <div class="version">
 
                 <h6 style="text-align:left">
   Version:
   </h6>
-                <font size="2"> 6.7</font>
+                <font size="2" *ngIf="selectedPackage">
+      <h2>{{selectedPackage.version}} </h2>
+
+    </font>
             </div>
         </div>
 
-
-
     </div>
+    
     <div class="cart">
-      <h3 style="text-align:center">
+        <h3 style="text-align:center">
 Cart
 <i class="fa fa-shopping-cart" style="font-size:48px;color:green" ></i>
 </h3>
 
+        <tr *ngFor="let package of cartList" (dblclick)="removeFromCart(package)">
+            <td>{{package.name}} v{{package.version}}</td>
+        </tr>
 
-          <select id="targetField" multiple="multiple" name="D1" style="width:200px; line-height:27px; float:left; height:130px;">
-              <option>Package</option>
-              <option>Package</option>
-              <option>Package</option>
-          </select>
-
+        <button class="btn"><i class="fa fa-download"></i> Download</button>
 
     </div>
 
@@ -94,4 +84,5 @@ Cart
 
 <div class="pm">
     <h2> </h2>
+
 </div>

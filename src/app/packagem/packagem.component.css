@@ -2,30 +2,94 @@ body {
     margin: 40px;
 }
 
+.btn {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #8B1717;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
 
+.frame {
+width: 50px;
+height: 50px;
+border: 3px solid #ccc;
+background: #eee;
+margin: auto;
+padding: 15px 25px;
+}
+img {
+width: 100%;
+height: 100%;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #F82F2F;
+}
 .center {
     text-align-last: center;
     border: 2px solid black;
 }
 
 
-.topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
+
+div#container {
+  display: table;
+  width: auto;
+  margin: 50px auto 0;
+}
+div#container div.cell {
+  display: table-cell;
+}
+div#container div.cell:last-child {
+  width: 1px;
 }
 
-.topnav .search-container button:hover {
-    background: #ccc;
+input[type=search], div.button {
+  width: 100%;
+  height: 35px;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  font-family: inherit;
+  font-size: inherit;
 }
 
+input[type=search] {
+  margin: 0;
+  padding: 0 10px;
 
+  background-color: #f8f8f8;
+
+  border: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+div.button {
+  line-height: 35px;
+  margin: 0;
+  padding: 0 3px;
+  color: #fff;
+  background-color:#8B1717;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  white-space: nowrap;
+}
+
+div.button:hover {
+  background-color:#F82F2F;
+}
+
+/* Grid template */
 .grid {
+font-size: 150%;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: 1fr;
@@ -74,3 +138,30 @@ grid-row-gap: 10px;
   background-color: #fff;
   color: #123;
   border-radius: 5px; grid-area: 2 / 2 / 5 / 3; }
+
+
+
+
+
+
+
+
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #405065;
+  }
+
+  .search-hero {
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin:auto;
+  }
+
+  .form-control {
+    box-shadow: 0 10px 40px 0 #B0C1D9;
+  }
+  .form-control::placeholder  {
+    font-family: FontAwesome;
+  }

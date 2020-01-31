@@ -12,6 +12,10 @@ import { NewpComponent } from './projectm/newp/newp.component';
 import { LocalpComponent } from './projectm/localp/localp.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +31,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
