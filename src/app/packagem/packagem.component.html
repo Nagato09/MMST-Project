@@ -9,19 +9,19 @@
     <div class="search_box">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <h2> </h2>
+
 
         <div id='container'>
             <div class='cell'>
                 <input type='search' placeholder='Search packages' [(ngModel)]="searchText">
             </div>
             <div class='cell'>
-                <div class='button'>Search</div>
+
             </div>
         </div>
         <h2> </h2>
 
-        <tr *ngFor="let package of packages | filter:searchText" (click)="onSelect(package)" (dblclick)="addToCart(package)">
+        <tr *ngFor="let package of packages | filter:searchText"  (click)="onSelect(package)" (dblclick)="addToCart(package)">
             <td>{{package.name}}</td>
         </tr>
 
@@ -35,7 +35,7 @@
               <div class="frame">
                 <i class="fa fa-shopping-bag" style="font-size:48px;color:red" ></i></div>
                 <font size="5" *ngIf="selectedPackage">
-                    {{selectedPackage.name | uppercase}}
+                    {{selectedPackage.name}}
 
                   </font>
             </h3>
@@ -44,10 +44,10 @@
             <div class="readme">
 
                 <h6 style="text-align:left">
-                      Readme:
+                      Command zum Installieren:
                 </h6>
                 <font size="2" *ngIf="selectedPackage">
-                    <h2>{{selectedPackage.readme}} </h2>
+                    <h3>{{selectedPackage.readme}} </h3>
 
                   </font>
             </div>
@@ -58,14 +58,14 @@
   Version:
   </h6>
                 <font size="2" *ngIf="selectedPackage">
-      <h2>{{selectedPackage.version}} </h2>
+      <h3>{{selectedPackage.version}} </h3>
 
     </font>
             </div>
         </div>
 
     </div>
-    
+
     <div class="cart">
         <h3 style="text-align:center">
 Cart
