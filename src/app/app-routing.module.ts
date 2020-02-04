@@ -9,7 +9,7 @@ import { LocalpComponent } from './projectm/localp/localp.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: PackagemComponent },
   { path: 'packagemanager', component: PackagemComponent },
   { path: 'projectmanager', component: ProjectmComponent },
   { path: 'contact', component: ContactComponent },

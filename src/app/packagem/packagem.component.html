@@ -1,5 +1,4 @@
-<app-nav>
-</app-nav>
+<app-nav></app-nav>
 
 <div class="pm">
     <h2> </h2>
@@ -16,12 +15,12 @@
                 <input type='search' placeholder='Search packages' [(ngModel)]="searchText">
             </div>
             <div class='cell'>
-
+                <div class='button'>Search</div>
             </div>
         </div>
         <h2> </h2>
 
-        <tr *ngFor="let package of packages | filter:searchText"  (click)="onSelect(package)" (dblclick)="addToCart(package)">
+        <tr *ngFor="let package of packages | filter:searchText " (click)="onSelect(package)" (dblclick)="addToCart(package)">
             <td>{{package.name}}</td>
         </tr>
 
@@ -35,7 +34,7 @@
               <div class="frame">
                 <i class="fa fa-shopping-bag" style="font-size:48px;color:red" ></i></div>
                 <font size="5" *ngIf="selectedPackage">
-                    {{selectedPackage.name}}
+                    {{selectedPackage.name | uppercase}}
 
                   </font>
             </h3>
@@ -44,10 +43,10 @@
             <div class="readme">
 
                 <h6 style="text-align:left">
-                      Command zum Installieren:
+                      Readme:
                 </h6>
                 <font size="2" *ngIf="selectedPackage">
-                    <h3>{{selectedPackage.readme}} </h3>
+                    <h2>{{selectedPackage.readme}} </h2>
 
                   </font>
             </div>
@@ -58,7 +57,7 @@
   Version:
   </h6>
                 <font size="2" *ngIf="selectedPackage">
-      <h3>{{selectedPackage.version}} </h3>
+      <h2>{{selectedPackage.version}} </h2>
 
     </font>
             </div>
