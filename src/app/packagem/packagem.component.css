@@ -1,3 +1,4 @@
+
 body {
     margin: 40px;
 }
@@ -61,14 +62,12 @@ input[type=search], div.button {
 }
 
 input[type=search] {
-  margin: 0;
+  margin: 10px;
   padding: 0 10px;
 
   background-color: #f8f8f8;
-
   border: 0;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
 }
 
 div.button {
@@ -78,8 +77,7 @@ div.button {
   color: #fff;
   background-color:#8B1717;
   font-weight: bold;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   white-space: nowrap;
 }
 
@@ -91,10 +89,11 @@ div.button:hover {
 .grid {
 font-size: 150%;
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: 1fr 2fr 1fr ;
 grid-template-rows: 1fr;
 grid-column-gap: 10px;
 border-radius: 5px;
+font-family:OpenSans;
 }
 
 .search_box {
@@ -140,13 +139,6 @@ grid-row-gap: 10px;
   border-radius: 5px; grid-area: 2 / 2 / 5 / 3; }
 
 
-
-
-
-
-
-
-
   .container {
     padding-top: 50px;
     padding-bottom: 10px;
@@ -163,5 +155,21 @@ grid-row-gap: 10px;
     box-shadow: 0 10px 40px 0 #B0C1D9;
   }
   .form-control::placeholder  {
-    font-family: FontAwesome;
+    font-family:OpenSans;
   }
+
+td {
+  background-color: #757575;
+  border-radius: 5px;
+}
+
+td:hover {
+  background-color: #00305d;
+  color: white;
+}
+
+table {
+position: relative;
+left:2.5%;
+width: 95%;
+}

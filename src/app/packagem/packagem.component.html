@@ -15,15 +15,17 @@
                 <input type='search' placeholder='Search packages' [(ngModel)]="searchText">
             </div>
             <div class='cell'>
-                <div class='button'>Search</div>
+
             </div>
         </div>
         <h2> </h2>
+      <table>
 
-        <tr *ngFor="let package of packages | filter:searchText " (click)="onSelect(package)" (dblclick)="addToCart(package)">
+
+        <tr *ngFor="let package of packages | filter:searchText"  (click)="onSelect(package)" (dblclick)="addToCart(package)">
             <td>{{package.name}}</td>
         </tr>
-
+      </table>
     </div>
     <div class="package_info">
 
@@ -34,7 +36,7 @@
               <div class="frame">
                 <i class="fa fa-shopping-bag" style="font-size:48px;color:red" ></i></div>
                 <font size="5" *ngIf="selectedPackage">
-                    {{selectedPackage.name | uppercase}}
+                    {{selectedPackage.name}}
 
                   </font>
             </h3>
@@ -43,10 +45,10 @@
             <div class="readme">
 
                 <h6 style="text-align:left">
-                      Readme:
+                      Command zum Installieren:
                 </h6>
                 <font size="2" *ngIf="selectedPackage">
-                    <h2>{{selectedPackage.readme}} </h2>
+                    <h3>{{selectedPackage.readme}} </h3>
 
                   </font>
             </div>
@@ -57,7 +59,7 @@
   Version:
   </h6>
                 <font size="2" *ngIf="selectedPackage">
-      <h2>{{selectedPackage.version}} </h2>
+      <h3>{{selectedPackage.version}} </h3>
 
     </font>
             </div>
@@ -70,11 +72,13 @@
 Cart
 <i class="fa fa-shopping-cart" style="font-size:48px;color:green" ></i>
 </h3>
+      <table>
+
 
         <tr *ngFor="let package of cartList" (dblclick)="removeFromCart(package)">
             <td>{{package.name}} v{{package.version}}</td>
         </tr>
-
+      </table>
         <button class="btn"><i class="fa fa-download"></i> Download</button>
 
     </div>

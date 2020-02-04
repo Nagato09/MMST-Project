@@ -9,3 +9,14 @@
   text-align: center;
   height: 200px;
 }
+.contact{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#00305d;
+  color: white;
+  text-align: center;
+  height: 180px;
+  font-size: smaller;
+}

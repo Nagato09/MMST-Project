@@ -13,8 +13,10 @@ import { LocalpComponent } from './projectm/localp/localp.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { FormsModule } from '@angular/forms';
-
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
+
+
 
 
 @NgModule({

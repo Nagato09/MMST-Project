@@ -26,23 +26,21 @@ export class PackagemComponent implements OnInit {
 
  searchText;
  packages = [
-   { id: 11, name: "Mr. Nice", readme: "India", version:"4.3" },
-   { id: 12, name: "Narco", readme: "USA", version:"7.3" },
-   { id: 13, name: "Bombasto", readme: "UK", version:"4.63" },
-   { id: 14, name: "Celeritas", readme: "Canada", version:"4.3" },
-   { id: 15, name: "Magneta", readme: "Russia", version:"4.5.3" },
-   { id: 16, name: "RubberMan", readme: "China" , version:"6.3"},
-   { id: 17, name: "Dynama", readme: "Germany", version:"4.0.3" },
-   { id: 18, name: "Dr IQ", readme: "Hong Kong" , version:"3.3"},
-   { id: 19, name: "Magma", readme: "South Africa", version:"4.9" },
-   { id: 20, name: "Tornado", readme: "Sri Lanka" , version:"0.3"},
-   { id: 21, name: "Angular", readme: "Sri Lanka" , version:"5.3"},
-   { id: 22, name: "NPM", readme: "Sri Lanka", version:"1.3" }
+   { name: "Beispielszene", readme: "npm install Beispielszene ", version:"0.0.1" },
+   { name: "ChaseCam", readme: "npm install ChaseCam", version:"0.0.1" },
+   { name: "Daydream_Elements", readme: "npm install Daydream_Elements", version:"0.0.1" },
+   { name: "Google_VR_SDK", readme: "npm install Google_VR_SDK", version:"0.0.1" },
+   { name: "GvrControllerMain", readme: "npm install GvrControllerMain", version:"0.0.1" },
+   { name: "GvrEditorEmulator", readme: "npm install GvrEditorEmulator" , version:"0.0.1"},
+   { name: "GvrEventSystem", readme: "npm install GvrEventSystem", version:"0.0.1" },
+   { name: "P2OLab", readme: "npm install P2OLab" , version:"0.0.1"},
+   { name: "Player", readme: "npm install Player", version:"0.0.1" },
+   { name: "Teleport", readme: "npm install Teleport0.0.1" , version:"0.0.1"},
+   { name: "Teleport", readme: "npm install Teleport0.0.2" , version:"0.0.2"},
+   { name: "Tunneling", readme: "npm install Tunneling", version:"0.0.1" }
  ];
 
  selectedPackage: Package;
-
-
  onSelect(packagea: Package): void {
    this.selectedPackage = packagea;
  }
