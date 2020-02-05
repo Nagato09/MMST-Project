@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PackagemComponent }  from './packagem.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule],
   declarations: [ PackagemComponent],
   bootstrap:    [ PackagemComponent ]
 })

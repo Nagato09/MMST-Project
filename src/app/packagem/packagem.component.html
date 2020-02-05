@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+
         <div id='container'>
             <div class='cell'>
                 <input type='search' placeholder='Search packages' [(ngModel)]="searchText">
@@ -22,7 +23,7 @@
       <table>
 
 
-        <tr *ngFor="let package of packages | filter:searchText"  (click)="onSelect(package)" (dblclick)="addToCart(package)">
+        <tr *ngFor="let package of packages | filter:searchText"   (click)="onSelect(package)" (dblclick)="addToCart(package)">
             <td>{{package.name}}</td>
         </tr>
       </table>
@@ -30,11 +31,12 @@
     <div class="package_info">
 
         <div class="package_grid">
-            <div class="logo">
-                <h3 style="text-align:center">
+            <div class="logo" style="background:#6292c1">
+                <h3 style="text-align:center; color:white">
 
               <div class="frame">
-                <i class="fa fa-shopping-bag" style="font-size:48px;color:red" ></i></div>
+                <i class="fa fa-shopping-bag" style="font-size:48px;color:red" ></i>
+              </div>
                 <font size="5" *ngIf="selectedPackage">
                     {{selectedPackage.name}}
 
@@ -42,23 +44,23 @@
             </h3>
             </div>
 
-            <div class="readme">
+            <div class="readme" style="background:#757575;border:3px solid black">
 
-                <h6 style="text-align:left">
+                <h6 style="text-align:center;color:white">
                       Command zum Installieren:
                 </h6>
-                <font size="2" *ngIf="selectedPackage">
+                <font size="2" style="text-align:center;color:white" *ngIf="selectedPackage">
                     <h3>{{selectedPackage.readme}} </h3>
 
                   </font>
             </div>
 
-            <div class="version">
+            <div class="version" style="background:#757575;border:3px solid black">
 
-                <h6 style="text-align:left">
-  Version:
-  </h6>
-                <font size="2" *ngIf="selectedPackage">
+                <h6 style="text-align:center;color:white">
+                  Version:
+                </h6>
+                <font size="2" style="text-align:center;color:white" *ngIf="selectedPackage">
       <h3>{{selectedPackage.version}} </h3>
 
     </font>
@@ -68,7 +70,7 @@
     </div>
 
     <div class="cart">
-        <h3 style="text-align:center">
+        <h3 style="text-align:center" >
 Cart
 <i class="fa fa-shopping-cart" style="font-size:48px;color:green" ></i>
 </h3>
