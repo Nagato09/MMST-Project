@@ -4,6 +4,23 @@ body {
 
 }
 
+input[type="file"] {
+    display: none;
+}
+label {
+  border-radius: 5px;
+  background-color: #8B1717;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  display:block;
+  text-align: center;
+}
+label:hover{
+  background-color: #F82F2F;
+}
 .btn {
   width: 100%;
   border-radius: 5px;

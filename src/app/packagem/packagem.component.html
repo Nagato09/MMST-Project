@@ -27,6 +27,12 @@
             <td>{{package.name}}</td>
         </tr>
       </table>
+      <label class="custom-file-upload">
+          <input type="file">
+          <i class="fa fa-upload" aria-hidden="true"></i>
+
+          Upload Packages
+      </label>
     </div>
     <div class="package_info">
 
@@ -35,7 +41,7 @@
                 <h3 style="text-align:center; color:white">
 
               <div class="frame">
-                <i class="fa fa-shopping-bag" style="font-size:48px;color:red" ></i>
+                <i class="fa fa-info-circle" style="font-size:48px" ></i>
               </div>
                 <font size="5" *ngIf="selectedPackage">
                     {{selectedPackage.name}}
@@ -46,7 +52,7 @@
 
             <div class="readme" style="background:#757575;border:3px solid black">
 
-                <h6 style="text-align:center;color:white">
+                <h6 style="text-align:center;color:white;text-decoration:underline">
                       Command zum Installieren:
                 </h6>
                 <font size="2" style="text-align:center;color:white" *ngIf="selectedPackage">
@@ -57,7 +63,7 @@
 
             <div class="version" style="background:#757575;border:3px solid black">
 
-                <h6 style="text-align:center;color:white">
+                <h6 style="text-align:center;color:white;text-decoration:underline">
                   Version:
                 </h6>
                 <font size="2" style="text-align:center;color:white" *ngIf="selectedPackage">
@@ -72,7 +78,7 @@
     <div class="cart">
         <h3 style="text-align:center" >
 Cart
-<i class="fa fa-shopping-cart" style="font-size:48px;color:green" ></i>
+<i class="fa fa-shopping-cart" style="font-size:48px;color:white" ></i>
 </h3>
       <table>
 
