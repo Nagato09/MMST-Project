@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 
 export class Package {
-  id: number;
   name: string;
   version: string;
   readme: string;
+  size: number;
 }
 
 @Component({
@@ -26,18 +26,18 @@ export class PackagemComponent implements OnInit {
 
  searchText;
  packages = [
-   { name: "Beispielszene", readme: "npm install Beispielszene ", version:"0.0.1" },
-   { name: "ChaseCam", readme: "npm install ChaseCam", version:"0.0.1" },
-   { name: "Daydream_Elements", readme: "npm install Daydream_Elements", version:"0.0.1" },
-   { name: "Google_VR_SDK", readme: "npm install Google_VR_SDK", version:"0.0.1" },
-   { name: "GvrControllerMain", readme: "npm install GvrControllerMain", version:"0.0.1" },
-   { name: "GvrEditorEmulator", readme: "npm install GvrEditorEmulator" , version:"0.0.1"},
-   { name: "GvrEventSystem", readme: "npm install GvrEventSystem", version:"0.0.1" },
-   { name: "P2OLab", readme: "npm install P2OLab" , version:"0.0.1"},
-   { name: "Player", readme: "npm install Player", version:"0.0.1" },
-   { name: "Teleport", readme: "npm install Teleport0.0.1" , version:"0.0.1"},
-   { name: "Teleport", readme: "npm install Teleport0.0.2" , version:"0.0.2"},
-   { name: "Tunneling", readme: "npm install Tunneling", version:"0.0.1" }
+   { name: "Beispielszene", readme: "npm install Beispielszene ", version:"1.4", size: 105 },
+   { name: "ChaseCam", readme: "npm install ChaseCam", version:"4.3", size: 214 },
+   { name: "Daydream_Elements", readme: "npm install Daydream_Elements", version:"0.0.1", size: 458 },
+   { name: "Google_VR_SDK", readme: "npm install Google_VR_SDK", version:"3.0", size: 45 },
+   { name: "GvrControllerMain", readme: "npm install GvrControllerMain", version:"2.0", size: 124 },
+   { name: "GvrEditorEmulator", readme: "npm install GvrEditorEmulator" , version:"2.3", size: 178},
+   { name: "GvrEventSystem", readme: "npm install GvrEventSystem", version:"1.3" , size: 154},
+   { name: "P2OLab", readme: "npm install P2OLab" , version:"0.0.2", size: 745},
+   { name: "Player", readme: "npm install Player", version:"0.0.1", size: 184 },
+   { name: "Teleport", readme: "npm install Teleport0.0.1" , version:"0.0.5", size: 325},
+   { name: "Teleport", readme: "npm install Teleport0.0.2" , version:"0.0.2", size: 400},
+   { name: "Tunneling", readme: "npm install Tunneling", version:"0.0.1", size: 361 }
  ];
 
  selectedPackage: Package;

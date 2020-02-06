@@ -142,7 +142,7 @@ border-radius: 5px;
   background-color: #6292c1;
   color: #fff;
   border-radius: 5px;
-  grid-area: 1 / 2 / 2 / 3;
+  /*grid-area: 1 / 2 / 2 / 3;*/
 
  }
 
@@ -161,19 +161,22 @@ grid-row-gap: 10px;
 .logo {
   background-color: #fff;
   color: #123;
-  border-radius: 5px;grid-area: 1 / 1 / 2 / 3;
+  border-radius: 5px;
+  grid-area: 1 / 1 / 2 / 3;
 
  }
 .readme {
   background-color: #fff;
   color: #123;
-  border-radius: 5px;grid-area: 2 / 1 / 5 / 2;
+  border-radius: 5px;
+  /*grid-area: 2 / 1 / 5 / 2;*/
 
  }
 .version {
   background-color: #fff;
   color: #123;
-  border-radius: 5px; grid-area: 2 / 2 / 5 / 3;
+  border-radius: 5px;
+  /*grid-area: 2 / 2 / 5 / 3;*/
 
  }
 

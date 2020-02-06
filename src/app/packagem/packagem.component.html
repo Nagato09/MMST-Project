@@ -52,9 +52,9 @@
 
             <div class="readme" style="background:#757575;border:3px solid black">
 
-                <h6 style="text-align:center;color:white;text-decoration:underline">
-                      Command zum Installieren:
-                </h6>
+                <h4 style="text-align:center;color:white;text-decoration:underline">
+                      Install:
+                </h4>
                 <font size="2" style="text-align:center;color:white" *ngIf="selectedPackage">
                     <h3>{{selectedPackage.readme}} </h3>
 
@@ -63,11 +63,37 @@
 
             <div class="version" style="background:#757575;border:3px solid black">
 
-                <h6 style="text-align:center;color:white;text-decoration:underline">
+                <h4 style="text-align:center;color:white;text-decoration:underline">
                   Version:
-                </h6>
+                </h4>
                 <font size="2" style="text-align:center;color:white" *ngIf="selectedPackage">
       <h3>{{selectedPackage.version}} </h3>
+
+    </font>
+            </div>
+            <div class="size" style="background:#757575;border:3px solid black">
+
+                <h4 style="text-align:center;color:white;text-decoration:underline">
+                  Size:
+                </h4>
+                <font size="2" style="text-align:center;color:white" *ngIf="selectedPackage">
+      <h3>{{selectedPackage.size}} MB</h3>
+
+    </font>
+            </div>
+            <div class="license" style="background:#757575;border:3px solid black">
+
+                <h4 style="text-align:center;color:white;text-decoration:underline">
+                  License:
+                </h4>
+            </div>
+            <div class="Documentation" style="background:#757575;border:3px solid black">
+
+                <h4 style="text-align:center;color:white;text-decoration:underline">
+                  Documentation:
+                </h4>
+                <font size="2" style="text-align:center;color:white">
+      <h3>available on the <a href="#">Packages docs site</a></h3>
 
     </font>
             </div>
